@@ -4,8 +4,6 @@ on:
   pull_request:
     paths:
       - 'README.md'
-      - '.markdownlint.json'
-      - '.markdown-link-check.json'
 
 # ========== 環境変数でMarkdownパスを定義 ==========
 env:
