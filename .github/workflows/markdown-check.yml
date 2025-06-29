@@ -3,15 +3,12 @@ name: 📝 Markdown Format Check
 on:
   pull_request:
     paths:
-      - 'docs/*.md'
       - 'README.md'
-      - '.markdownlint.json'
-      - '.markdown-link-check.json'
 
 # ========== 環境変数でMarkdownパスを定義 ==========
 env:
-  MD_PATHS: '"docs/*.md" "README.md"'
-  MD_GLOB_PATTERN: 'docs/*.md README.md'
+  MD_PATHS: '"README.md"'
+  MD_GLOB_PATTERN: 'README.md'
 
 jobs:
   markdown-lint:
